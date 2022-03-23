@@ -24,15 +24,13 @@ class _HomePageState extends State<HomePage> {
   bool isExpaned = true;
 
   bool get _isAppBarExpanded {
-    return _autoScrollController.hasClients &&
-        _autoScrollController.offset > (160 - kToolbarHeight);
+    return _autoScrollController.hasClients && _autoScrollController.offset > (160 - kToolbarHeight);
   }
 
   @override
   void initState() {
     _autoScrollController = AutoScrollController(
-      viewportBoundaryGetter: () =>
-          Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
+      viewportBoundaryGetter: () => Rect.fromLTRB(0, 0, 0, MediaQuery.of(context).padding.bottom),
       axis: scrollDirection,
     )..addListener(
         () => _isAppBarExpanded
@@ -55,8 +53,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   Future _scrollToIndex(int index) async {
-    await _autoScrollController.scrollToIndex(index,
-        preferPosition: AutoScrollPosition.begin);
+    await _autoScrollController.scrollToIndex(index, preferPosition: AutoScrollPosition.begin);
     _autoScrollController.highlight(index);
   }
 
@@ -202,8 +199,7 @@ class _HomePageState extends State<HomePage> {
                           icon: FaIcon(FontAwesomeIcons.linkedin),
                           color: Color(0xffffA8B2D1),
                           onPressed: () {
-                            method.launchURL(
-                                "https://www.linkedin.com/in/tushar-nikam-a29a97131/");
+                            method.launchURL("https://www.linkedin.com/in/tushar-nikam-a29a97131/");
                           },
                           iconSize: 16.0,
                         ),
@@ -258,7 +254,7 @@ class _HomePageState extends State<HomePage> {
                                     height: 6.0,
                                   ),
                                   CustomText(
-                                    text: "Tushar Nikam.",
+                                    text: "Elvin Osmanov.",
                                     textsize: 68.0,
                                     color: Color(0xffCCD6F6),
                                     fontWeight: FontWeight.w900,
@@ -267,8 +263,7 @@ class _HomePageState extends State<HomePage> {
                                     height: 4.0,
                                   ),
                                   CustomText(
-                                    text:
-                                        "I build things for the Android and web.",
+                                    text: "I build apps for the mobile and web.",
                                     textsize: 56.0,
                                     color: Color(0xffCCD6F6).withOpacity(0.6),
                                     fontWeight: FontWeight.w700,
@@ -279,7 +274,7 @@ class _HomePageState extends State<HomePage> {
                                   Wrap(
                                     children: [
                                       Text(
-                                        "I'm a freelancer based in Nashik, IN specializing in \nbuilding (and occasionally designing) exceptional websites, \napplications, and everything in between.",
+                                        "I'm a freelancer based in Azerbaijan, specializing in \nConverting UI, UX designs to Flutter code, \nApplications, and everything in between.",
                                         style: TextStyle(
                                           color: Colors.grey,
                                           fontSize: 16.0,
@@ -298,8 +293,7 @@ class _HomePageState extends State<HomePage> {
                                     onTap: () {
                                       method.launchEmail();
                                     },
-                                    hoverColor:
-                                        Color(0xff64FFDA).withOpacity(0.2),
+                                    hoverColor: Color(0xff64FFDA).withOpacity(0.2),
                                     borderRadius: BorderRadius.circular(4.0),
                                     child: Container(
                                       alignment: Alignment.center,
@@ -309,8 +303,7 @@ class _HomePageState extends State<HomePage> {
                                         border: Border.all(
                                           color: Color(0xff64FFDA),
                                         ),
-                                        borderRadius:
-                                            BorderRadius.circular(4.0),
+                                        borderRadius: BorderRadius.circular(4.0),
                                       ),
                                       child: Text(
                                         "Get In Touch",
@@ -330,8 +323,6 @@ class _HomePageState extends State<HomePage> {
                                 ],
                               ),
 
-                              
-
                               //About Me
                               _wrapScrollTag(
                                 index: 0,
@@ -342,10 +333,7 @@ class _HomePageState extends State<HomePage> {
                               ),
 
                               //Where I've Worked
-                              _wrapScrollTag(
-                                index: 1,
-                                child:Work()
-                              ),
+                              _wrapScrollTag(index: 1, child: Work()),
                               SizedBox(
                                 height: size.height * 0.10,
                               ),
@@ -365,8 +353,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic9.jpg",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/WhatsApp--UI-Clone");
+                                          method.launchURL("https://github.com/champ96k/WhatsApp--UI-Clone");
                                         },
                                         projectDesc:
                                             "A Mobile app for both Android and IOS. View your Status, Chat, and call history. The purpose of this projcet is to Learn Flutter complex UI Design.",
@@ -379,8 +366,8 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic2.jpg",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Blog-App-using-Firebase");
+                                          method
+                                              .launchURL("https://github.com/champ96k/Flutter-Blog-App-using-Firebase");
                                         },
                                         projectDesc:
                                             "A blog application using Flutter and firebase, In this project implement Firebase CURD operation, User can add post as well see all the post.",
@@ -393,8 +380,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic3.png",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Wallpaper-Hub-using-Flutter");
+                                          method.launchURL("https://github.com/champ96k/Wallpaper-Hub-using-Flutter");
                                         },
                                         projectDesc:
                                             "A Wallpaper application Using Pixel API, to show more than 5k+ images. User can Search any images, as well as Download and directly set Image as Wallpaper.",
@@ -407,8 +393,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic4.jpg",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/coronavirus-tracker-app");
+                                          method.launchURL("https://github.com/champ96k/coronavirus-tracker-app");
                                         },
                                         projectDesc:
                                             "A Flutter app to track Coronavirus outbreak, Current statistics of global total confirmed, deaths, recovered cases, Health news, coronavirus safety information and many more.",
@@ -421,8 +406,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic5.jpg",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Gender-Predictor-Flutter-App");
+                                          method.launchURL("https://github.com/champ96k/Gender-Predictor-Flutter-App");
                                         },
                                         projectDesc:
                                             "In this app you can predict the gender with the help of name and probability of that name.",
@@ -435,8 +419,8 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic6.jpg",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/News-Hours-Apps-Using-Rest-API");
+                                          method
+                                              .launchURL("https://github.com/champ96k/News-Hours-Apps-Using-Rest-API");
                                         },
                                         projectDesc:
                                             "complete news Application using rest API API link- https://newsapi.org, you can get all news.",
@@ -463,8 +447,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic8.jpg",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Weather-Application");
+                                          method.launchURL("https://github.com/champ96k/Flutter-Weather-Application");
                                         },
                                         projectDesc:
                                             "Weather app. This weather app is one of best free weather apps with full features: Local weather, weather map (weather map service) and weather widgets. Widgets for Android: The weather radar widget free and clock widget weather with beautiful style.",
@@ -477,13 +460,11 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic10.jpg",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://pub.dev/packages/flutter_onboarding_screen");
+                                          method.launchURL("https://pub.dev/packages/flutter_onboarding_screen");
                                         },
                                         projectDesc:
                                             "A flutter package which help developer in creating a onboarding screens of their app.",
-                                        projectTitle:
-                                            "Flutter Onboarding Screen Package",
+                                        projectTitle: "Flutter Onboarding Screen Package",
                                         tech1: "Dart",
                                         tech2: "Flutter",
                                         tech3: "Dart Package",
@@ -495,8 +476,7 @@ class _HomePageState extends State<HomePage> {
                                           method.launchURL(
                                               "https://github.com/champ96k/Flutter-Neumorphic-Calculator-UI");
                                         },
-                                        projectDesc:
-                                            "To explore the flutter Neumorphic design",
+                                        projectDesc: "To explore the flutter Neumorphic design",
                                         projectTitle: "Neumorphic Design",
                                         tech1: "Dart",
                                         tech2: "Flutter",
@@ -519,8 +499,7 @@ class _HomePageState extends State<HomePage> {
                                         child: Column(
                                           children: [
                                             Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceAround,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 OSImages(
                                                   image: "images/pic101.png",
@@ -540,38 +519,33 @@ class _HomePageState extends State<HomePage> {
                                               height: size.height * 0.04,
                                             ),
                                             Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceAround,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 CustomText(
                                                   text: "Payment Getway",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
                                                 CustomText(
                                                   text: "Chat App",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
                                                 CustomText(
                                                   text: "Spotify Clone",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
                                                 CustomText(
                                                   text: "TODO App",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
@@ -588,8 +562,7 @@ class _HomePageState extends State<HomePage> {
                                         child: Column(
                                           children: [
                                             Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceAround,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 OSImages(
                                                   image: "images/pic114.png",
@@ -609,38 +582,33 @@ class _HomePageState extends State<HomePage> {
                                               height: size.height * 0.04,
                                             ),
                                             Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceAround,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 CustomText(
                                                   text: "Spannish Audio",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
                                                 CustomText(
                                                   text: "Drumpad",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
                                                 CustomText(
                                                   text: "Currency Converter",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
                                                 CustomText(
                                                   text: "Calculator",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
@@ -657,8 +625,7 @@ class _HomePageState extends State<HomePage> {
                                         child: Column(
                                           children: [
                                             Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceAround,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 OSImages(
                                                   image: "images/pic118.jpeg",
@@ -678,38 +645,33 @@ class _HomePageState extends State<HomePage> {
                                               height: size.height * 0.04,
                                             ),
                                             Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.spaceAround,
+                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
                                               children: [
                                                 CustomText(
                                                   text: "Prime Videos UI",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
                                                 CustomText(
                                                   text: "Tic Tac Toe Game",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
                                                 CustomText(
                                                   text: "Currency Converter UI",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
                                                 CustomText(
                                                   text: "Love Calculator",
                                                   textsize: 16.0,
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   fontWeight: FontWeight.w700,
                                                   letterSpacing: 1.75,
                                                 ),
@@ -736,8 +698,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic104.png",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-UI-Kit");
+                                          method.launchURL("https://github.com/champ96k/Flutter-UI-Kit");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -750,8 +711,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic105.png",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-UI-Kit");
+                                          method.launchURL("https://github.com/champ96k/Flutter-UI-Kit");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -764,8 +724,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic106.png",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flowers-Shop-Mobile-App-Store");
+                                          method.launchURL("https://github.com/champ96k/Flowers-Shop-Mobile-App-Store");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -778,8 +737,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic107.jfif",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Food-Delivery-App-UI");
+                                          method.launchURL("https://github.com/champ96k/Food-Delivery-App-UI");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -792,8 +750,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic108.jfif",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Plant-Shop-UI-Design");
+                                          method.launchURL("https://github.com/champ96k/Flutter-Plant-Shop-UI-Design");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -806,8 +763,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic109.jfif",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Foody-App-UI-Design");
+                                          method.launchURL("https://github.com/champ96k/Foody-App-UI-Design");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -834,8 +790,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic501.png",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Ganpati-Bappa-");
+                                          method.launchURL("https://github.com/champ96k/Ganpati-Bappa-");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -848,8 +803,8 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic506.png",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Netflix-Web-Clone-Using-Flutter");
+                                          method
+                                              .launchURL("https://github.com/champ96k/Netflix-Web-Clone-Using-Flutter");
                                         },
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
@@ -872,12 +827,10 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     Container(
                                       height: size.height * 0.68,
-                                      width: MediaQuery.of(context).size.width -
-                                          100,
+                                      width: MediaQuery.of(context).size.width - 100,
                                       // color: Colors.orange,
                                       child: Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
+                                        mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
                                           CustomText(
                                             text: "0.4 What's Next?",
@@ -904,8 +857,7 @@ class _HomePageState extends State<HomePage> {
                                                 "Although I'm currently looking for SDE-1 opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
-                                                  color: Colors.white
-                                                      .withOpacity(0.4),
+                                                  color: Colors.white.withOpacity(0.4),
                                                   letterSpacing: 0.75,
                                                   fontSize: 17.0,
                                                 ),
@@ -923,8 +875,7 @@ class _HomePageState extends State<HomePage> {
                                               elevation: 4.0,
                                               color: Color(0xff64FFDA),
                                               shape: RoundedRectangleBorder(
-                                                borderRadius:
-                                                    BorderRadius.circular(6.0),
+                                                borderRadius: BorderRadius.circular(6.0),
                                               ),
                                               child: Container(
                                                 margin: EdgeInsets.all(0.85),
@@ -933,13 +884,10 @@ class _HomePageState extends State<HomePage> {
                                                 alignment: Alignment.center,
                                                 decoration: BoxDecoration(
                                                   color: Color(0xff0A192F),
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          6.0),
+                                                  borderRadius: BorderRadius.circular(6.0),
                                                 ),
                                                 child: Padding(
-                                                  padding: const EdgeInsets
-                                                      .symmetric(
+                                                  padding: const EdgeInsets.symmetric(
                                                     horizontal: 8.0,
                                                   ),
                                                   child: Text(
@@ -959,11 +907,8 @@ class _HomePageState extends State<HomePage> {
                                     //Footer
                                     Container(
                                       alignment: Alignment.center,
-                                      height:
-                                          MediaQuery.of(context).size.height /
-                                              6,
-                                      width: MediaQuery.of(context).size.width -
-                                          100,
+                                      height: MediaQuery.of(context).size.height / 6,
+                                      width: MediaQuery.of(context).size.width - 100,
                                       //color: Colors.white,
                                       child: Text(
                                         "Designed & Built by Tushar Nikam 💙 Flutter",

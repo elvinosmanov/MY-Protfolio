@@ -9,7 +9,7 @@
             "webRoot": "${workspaceFolder}"
         },
         {
-            "name": "tusharnikam (Flutter)",
+            "name": "elvinosmanov (Flutter)",
             "program": "lib/main.dart",
             "request": "launch",
             "type": "dart"
