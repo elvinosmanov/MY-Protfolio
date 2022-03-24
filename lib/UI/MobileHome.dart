@@ -48,8 +48,8 @@ class _MobileHomeState extends State<MobileHome> {
                   currentAccountPicture: CircleAvatar(
                     child: Icon(Icons.person),
                   ),
-                  accountName: Text("Tushar Nikam"),
-                  accountEmail: Text("champ96k@gmail.com")),
+                  accountName: Text("Elvin Osmanov"),
+                  accountEmail: Text("elvinn.osmanov@gmail.com")),
               ListTile(
                 title: Text("Share"),
                 leading: Icon(Icons.share),
@@ -228,8 +228,7 @@ class _MobileHomeState extends State<MobileHome> {
                             letterSpacing: 0.75,
                           ),
                           CustomText(
-                            text:
-                                "Here are a few technologies I've been working with recently:\n\n",
+                            text: "Here are a few technologies I've been working with recently:\n\n",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -306,7 +305,7 @@ class _MobileHomeState extends State<MobileHome> {
                         width: size.width * 0.6,
                         child: Image(
                           fit: BoxFit.cover,
-                          image: AssetImage("images/pic1.jpeg"),
+                          image: AssetImage("images/pic1.jpg"),
                         ),
                       ),
                       Container(
@@ -797,8 +796,7 @@ class _MobileHomeState extends State<MobileHome> {
                       size: 15.0,
                     ),
                     onPressed: () {
-                      method.launchURL(
-                          "https://www.linkedin.com/in/tushar-nikam-a29a97131/");
+                      method.launchURL("https://www.linkedin.com/in/tushar-nikam-a29a97131/");
                     },
                   ),
                   IconButton(
@@ -828,22 +826,22 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.07,
               ),
 
-              //Footer
-              Container(
-                alignment: Alignment.center,
-                height: MediaQuery.of(context).size.height / 6,
-                width: MediaQuery.of(context).size.width,
-                //color: Colors.white,
-                child: Text(
-                  "Designed & Built by Tushar Nikam 💙 Flutter",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white.withOpacity(0.4),
-                    letterSpacing: 1.75,
-                    fontSize: 14.0,
-                  ),
-                ),
-              ),
+              // //Footer
+              // Container(
+              //   alignment: Alignment.center,
+              //   height: MediaQuery.of(context).size.height / 6,
+              //   width: MediaQuery.of(context).size.width,
+              //   //color: Colors.white,
+              //   child: Text(
+              //     "Designed & Built by Tushar Nikam 💙 Flutter",
+              //     textAlign: TextAlign.center,
+              //     style: TextStyle(
+              //       color: Colors.white.withOpacity(0.4),
+              //       letterSpacing: 1.75,
+              //       fontSize: 14.0,
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),
