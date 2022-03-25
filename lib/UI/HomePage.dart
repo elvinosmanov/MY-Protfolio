@@ -337,57 +337,63 @@ class _HomePageState extends State<HomePage> {
                                         height: size.height * 0.04,
                                       ),
                                       FeatureProject(
-                                        imagePath: "images/pic9.jpg",
-                                        ontab: () {
-                                          method.launchURL("https://github.com/champ96k/WhatsApp--UI-Clone");
-                                        },
+                                        imagePath: "images/pic2.png",
+                                        ontab: () {},
                                         projectDesc:
-                                            "A Mobile app for both Android and IOS. View your Status, Chat, and call history. The purpose of this projcet is to Learn Flutter complex UI Design.",
-                                        projectTitle: "WhatsaApp UI Clone",
+                                            "A Mobile app for both Android and IOS. ELXY Driver was freelance project. I wrote UI/UX of this app",
+                                        projectTitle: "ELYX Driver",
                                         tech1: "Flutter",
                                         tech2: "Dart",
                                         tech3: "Flutter UI",
                                       ),
                                       FeatureProject(
-                                        imagePath: "images/pic2.jpg",
-                                        ontab: () {
-                                          method
-                                              .launchURL("https://github.com/champ96k/Flutter-Blog-App-using-Firebase");
-                                        },
+                                        imagePath: "images/pic3.png",
+                                        ontab: () {},
                                         projectDesc:
-                                            "A blog application using Flutter and firebase, In this project implement Firebase CURD operation, User can add post as well see all the post.",
+                                            "A Mobile app for both Android and IOS. Auchan Store was freelance project. written UI/UX of this app. User can login/register, order products and pay online",
                                         projectTitle: "Blog Application",
                                         tech1: "Dart",
                                         tech2: "Flutter",
-                                        tech3: "Firebase",
+                                        tech3: "Flutter UI",
                                       ),
                                       SizedBox(
                                         height: size.height * 0.04,
                                       ),
                                       FeatureProject(
-                                        imagePath: "images/pic102.gif",
+                                        imagePath: "images/pic4.png",
                                         ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/champ96k/Flutter-Web-SolMusic-Landing-Page");
+                                          method.launchURL("https://github.com/elvinosmanov/mc_activities");
                                         },
                                         projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
+                                            "Project for my own work in AZFEN. In this project implemented API CURD operations. User can add documents, delete, update and delete. Also can Export as a PDF",
                                         projectTitle: "SolMusic",
                                         tech1: "Dart",
                                         tech2: "Flutter",
-                                        tech3: "Web",
+                                        tech3: "Web | API",
                                       ),
                                       FeatureProject(
-                                        imagePath: "images/pic104.png",
+                                        imagePath: "images/pic5.png",
                                         ontab: () {
-                                          method.launchURL("https://github.com/champ96k/Flutter-UI-Kit");
+                                          method.launchURL("https://github.com/elvinosmanov/ecommerce-app");
                                         },
                                         projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
+                                            "E-Commerce App. implemented API CURD operations. User can add products",
                                         projectTitle: "Sign Up and Sign In",
                                         tech1: "Dart",
                                         tech2: "Flutter",
                                         tech3: "Flutter UI",
+                                      ),
+                                      FeatureProject(
+                                        imagePath: "images/pic6.png",
+                                        ontab: () {
+                                          method.launchURL("https://github.com/elvinosmanov/ecommmerce_app");
+                                        },
+                                        projectDesc:
+                                            "E-Commerce App | Stripe Build shop app. User can login/register, order products. can add to Cart, add to favorite\nClean Code and avoid Boilerplate code",
+                                        projectTitle: "Sign Up and Sign In",
+                                        tech1: "Dart",
+                                        tech2: "Flutter",
+                                        tech3: "API",
                                       ),
                                     ],
                                   )),
@@ -480,21 +486,7 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
 
-                                    //Footer
-                                    Container(
-                                      alignment: Alignment.center,
-                                      height: MediaQuery.of(context).size.height / 6,
-                                      width: MediaQuery.of(context).size.width - 100,
-                                      //color: Colors.white,
-                                      child: Text(
-                                        "Designed & Built by Tushar Nikam 💙 Flutter",
-                                        style: TextStyle(
-                                          color: Colors.white.withOpacity(0.4),
-                                          letterSpacing: 1.75,
-                                          fontSize: 14.0,
-                                        ),
-                                      ),
-                                    ),
+                                   
                                   ],
                                 ),
                               ),
