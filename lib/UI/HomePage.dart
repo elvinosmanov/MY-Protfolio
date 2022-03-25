@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:potrtfolio/Model/Method.dart';
 import 'package:potrtfolio/UI/About.dart';
@@ -8,7 +7,6 @@ import 'package:potrtfolio/UI/Work.dart';
 import 'package:potrtfolio/Widget/AppBarTitle.dart';
 import 'package:potrtfolio/Widget/CustomText.dart';
 import 'package:potrtfolio/Widget/MainTiitle.dart';
-import 'package:potrtfolio/Widget/OSImages.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
 class HomePage extends StatefulWidget {
@@ -340,7 +338,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic2.png",
                                         ontab: () {},
                                         projectDesc:
-                                            "A Mobile app for both Android and IOS. ELXY Driver was freelance project. I wrote UI/UX of this app",
+                                            "A Mobile app for both Android and IOS. ELXY Driver was freelance project. \nwritten UI/UX of this app",
                                         projectTitle: "ELYX Driver",
                                         tech1: "Flutter",
                                         tech2: "Dart",
@@ -350,7 +348,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/pic3.png",
                                         ontab: () {},
                                         projectDesc:
-                                            "A Mobile app for both Android and IOS. Auchan Store was freelance project. written UI/UX of this app. User can login/register, order products and pay online",
+                                            "A Mobile app for both Android and IOS. Auchan Store was freelance project. written UI/UX of this app. \nUser can login/register, order products and pay online",
                                         projectTitle: "Blog Application",
                                         tech1: "Dart",
                                         tech2: "Flutter",
@@ -436,7 +434,7 @@ class _HomePageState extends State<HomePage> {
                                           Wrap(
                                             children: [
                                               Text(
-                                                "Although I'm currently looking for SDE-1 opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
+                                                "Although I'm currently looking for work opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   color: Colors.white.withOpacity(0.4),
@@ -485,8 +483,6 @@ class _HomePageState extends State<HomePage> {
                                         ],
                                       ),
                                     ),
-
-                                   
                                   ],
                                 ),
                               ),

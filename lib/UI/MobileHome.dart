@@ -66,14 +66,6 @@ class _MobileHomeState extends State<MobileHome> {
       appBar: AppBar(
         backgroundColor: Color(0xff0A192F),
         elevation: 0.0,
-        title: IconButton(
-          icon: Icon(
-            Icons.change_history,
-            size: 32.0,
-            color: Color(0xff64FFDA),
-          ),
-          onPressed: () {},
-        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -95,7 +87,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.02,
               ),
               CustomText(
-                text: "Tushar Nikam.",
+                text: "Elvin Osmanov.",
                 textsize: 52.0,
                 color: Color(0xffCCD6F6),
                 fontWeight: FontWeight.w900,
@@ -104,7 +96,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.04,
               ),
               CustomText(
-                text: "I build things for the Android and web.",
+                text: "I build things for the Mobile and web.",
                 textsize: 42.0,
                 color: Color(0xffCCD6F6).withOpacity(0.6),
                 fontWeight: FontWeight.w700,
@@ -117,7 +109,7 @@ class _MobileHomeState extends State<MobileHome> {
                 child: Wrap(
                   children: [
                     Text(
-                      "I'm a freelancer based in Nashik, IN specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.",
+                      "I'm a freelancer based in Azerbaijan, specializing in Converting UI, UX designs to Flutter code, Applications, and everything in between.",
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 15.0,
@@ -251,20 +243,20 @@ class _MobileHomeState extends State<MobileHome> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                               technology(context, "Dart"),
-                            technology(context, "Flutter"),
-                            technology(context, "Firebase"),
-                            technology(context, "UI/UX (Figma)"),
+                                technology(context, "Dart"),
+                                technology(context, "Flutter"),
+                                technology(context, "Firebase"),
+                                technology(context, "UI/UX (Figma)"),
                               ],
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                 technology(context, "Python"),
-                            technology(context, "Git - Github"),
-                            technology(context, "C/C++, Java"),
-                            technology(context, "Arduino."),
+                                technology(context, "Python"),
+                                technology(context, "Git - Github"),
+                                technology(context, "C/C++, Java"),
+                                technology(context, "Arduino."),
                               ],
                             ),
                           ],
@@ -390,7 +382,7 @@ class _MobileHomeState extends State<MobileHome> {
 
               MobileProject(
                 ontab: () {},
-                image: "images/pic2.jpg",
+                image: "images/pic2.png",
               ),
 
               SizedBox(
@@ -408,7 +400,7 @@ class _MobileHomeState extends State<MobileHome> {
 
               MobileProject(
                 ontab: () {},
-                image: "images/pic4.jpg",
+                image: "images/pic4.png",
               ),
 
               SizedBox(
@@ -417,7 +409,7 @@ class _MobileHomeState extends State<MobileHome> {
 
               MobileProject(
                 ontab: () {},
-                image: "images/pic5.jpg",
+                image: "images/pic5.png",
               ),
 
               SizedBox(
@@ -426,7 +418,7 @@ class _MobileHomeState extends State<MobileHome> {
 
               MobileProject(
                 ontab: () {},
-                image: "images/pic6.jpg",
+                image: "images/pic6.png",
               ),
 
               SizedBox(
@@ -538,7 +530,6 @@ class _MobileHomeState extends State<MobileHome> {
                       method.launchURL("https://www.linkedin.com/in/eosmanov/");
                     },
                   ),
-                  
                   IconButton(
                     icon: Icon(
                       Icons.mail,
@@ -555,7 +546,6 @@ class _MobileHomeState extends State<MobileHome> {
               SizedBox(
                 height: size.height * 0.07,
               ),
-
             ],
           ),
         ),
