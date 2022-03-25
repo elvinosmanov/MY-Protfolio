@@ -150,6 +150,7 @@ class FeatureProject extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
+                        if(ontab!=null)
                         IconButton(
                           icon: FaIcon(FontAwesomeIcons.github),
                           color: Colors.white.withOpacity(0.3),

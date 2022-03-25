@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 Tab(
                                   child: AppBarTitle(
-                                    text: 'Contact Us',
+                                    text: 'Contact Me',
                                   ),
                                 ),
                               ],
@@ -141,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                               hoverColor: Color(0xFF3E0449),
                               onPressed: () {
                                 method.launchURL(
-                                    "https://drive.google.com/file/d/1yHLcrN5pCUGIeT8SrwC2L95Lv0MVbJpx/view?usp=sharing");
+                                    "https://drive.google.com/file/d/1d8joQTVpQQF0Giici4VHDam95sGMo58a/view");
                               },
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
@@ -336,7 +336,6 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                       FeatureProject(
                                         imagePath: "images/pic2.png",
-                                        ontab: () {},
                                         projectDesc:
                                             "A Mobile app for both Android and IOS. ELXY Driver was freelance project. \nwritten UI/UX of this app",
                                         projectTitle: "ELYX Driver",
@@ -346,10 +345,9 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                       FeatureProject(
                                         imagePath: "images/pic3.png",
-                                        ontab: () {},
                                         projectDesc:
                                             "A Mobile app for both Android and IOS. Auchan Store was freelance project. written UI/UX of this app. \nUser can login/register, order products and pay online",
-                                        projectTitle: "Blog Application",
+                                        projectTitle: "Auchan Store",
                                         tech1: "Dart",
                                         tech2: "Flutter",
                                         tech3: "Flutter UI",
@@ -364,7 +362,7 @@ class _HomePageState extends State<HomePage> {
                                         },
                                         projectDesc:
                                             "Project for my own work in AZFEN. In this project implemented API CURD operations. User can add documents, delete, update and delete. Also can Export as a PDF",
-                                        projectTitle: "SolMusic",
+                                        projectTitle: "Mechanical Completion Activities",
                                         tech1: "Dart",
                                         tech2: "Flutter",
                                         tech3: "Web | API",
@@ -376,7 +374,7 @@ class _HomePageState extends State<HomePage> {
                                         },
                                         projectDesc:
                                             "E-Commerce App. implemented API CURD operations. User can add products",
-                                        projectTitle: "Sign Up and Sign In",
+                                        projectTitle: "E-Commerce App",
                                         tech1: "Dart",
                                         tech2: "Flutter",
                                         tech3: "Flutter UI",
@@ -388,7 +386,7 @@ class _HomePageState extends State<HomePage> {
                                         },
                                         projectDesc:
                                             "E-Commerce App | Stripe Build shop app. User can login/register, order products. can add to Cart, add to favorite\nClean Code and avoid Boilerplate code",
-                                        projectTitle: "Sign Up and Sign In",
+                                        projectTitle: "E-Commerce App",
                                         tech1: "Dart",
                                         tech2: "Flutter",
                                         tech3: "API",
@@ -434,7 +432,7 @@ class _HomePageState extends State<HomePage> {
                                           Wrap(
                                             children: [
                                               Text(
-                                                "Although I'm currently looking for work opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
+                                                "I'm currently looking for work opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   color: Colors.white.withOpacity(0.4),
