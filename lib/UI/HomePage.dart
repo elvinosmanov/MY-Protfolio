@@ -107,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 Tab(
                                   child: AppBarTitle(
-                                    text: 'Project',
+                                    text: 'Projects',
                                   ),
                                 ),
                                 Tab(
@@ -247,7 +247,7 @@ class _HomePageState extends State<HomePage> {
                                     height: 4.0,
                                   ),
                                   CustomText(
-                                    text: "I build apps for the mobile and web.",
+                                    text: "Flutter developer who builds apps for the mobile and web.",
                                     textsize: 56.0,
                                     color: Color(0xffCCD6F6).withOpacity(0.6),
                                     fontWeight: FontWeight.w700,
@@ -258,7 +258,7 @@ class _HomePageState extends State<HomePage> {
                                   Wrap(
                                     children: [
                                       Text(
-                                        "I'm a freelancer based in Azerbaijan, specializing in \nConverting UI, UX designs to Flutter code, \nApplications, and everything in between.",
+                                        "I'm a freelance flutter developer from Baku, Azerbaijan, specializing in converting ui, ux designs to fully functional flutter applications.",
                                         style: TextStyle(
                                           color: Colors.grey,
                                           fontSize: 16.0,
@@ -337,7 +337,7 @@ class _HomePageState extends State<HomePage> {
                                       FeatureProject(
                                         imagePath: "images/pic2.png",
                                         projectDesc:
-                                            "A Mobile app for both Android and IOS. ELXY Driver was freelance project. \nwritten UI/UX of this app",
+                                            "A mobile app for both Android and IOS. ELXY Driver App is an online taxi app. I built both design and code part of the application.",
                                         projectTitle: "ELYX Driver",
                                         tech1: "Flutter",
                                         tech2: "Dart",
@@ -432,7 +432,7 @@ class _HomePageState extends State<HomePage> {
                                           Wrap(
                                             children: [
                                               Text(
-                                                "I'm currently looking for work opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!",
+                                                "I'm currently looking for work opportunities, my inbox is \nalways open. Whether you have a question or just want to say hi, I'll try my \nbest to get back to you!\n\nMob:  +994554261998",
                                                 textAlign: TextAlign.center,
                                                 style: TextStyle(
                                                   color: Colors.white.withOpacity(0.4),

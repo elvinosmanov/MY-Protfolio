@@ -96,7 +96,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.04,
               ),
               CustomText(
-                text: "I build things for the Mobile and web.",
+                text: "Flutter developer who builds apps for the mobile and web.",
                 textsize: 42.0,
                 color: Color(0xffCCD6F6).withOpacity(0.6),
                 fontWeight: FontWeight.w700,
@@ -109,7 +109,7 @@ class _MobileHomeState extends State<MobileHome> {
                 child: Wrap(
                   children: [
                     Text(
-                      "I'm a freelancer based in Azerbaijan, specializing in Converting UI, UX designs to Flutter code, Applications, and everything in between.",
+                      "I'm a freelance flutter developer from Baku, Azerbaijan, specializing in converting ui, ux designs to fully functional flutter applications.",
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 15.0,
@@ -205,7 +205,7 @@ class _MobileHomeState extends State<MobileHome> {
                         children: [
                           CustomText(
                             text:
-                                "Hello! I'm Elvin Osmanov, a Freelancer based in Baku, IN.\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n",
+                                "Hello, Thank you discovering me. Let me give you more information about myself.\nI am a young individual currently working at AZFEN J.V as Document controller and also working as a freelance flutter developer.\nI love to create apps which helps people to facilitate the work they are doing. With my strong background from different fields of computer science, i am able to write pixel-perfect, high performance and clean code applications.\n\nI completed my bachelor's degree in Petroleum Engineering with distinction at UFAZ French-Azerbaijani University which is a joint two diploma program between ASOIU, Strasbourg and Rennes 1 universities. I have two diploma one from ASOIU and other from Rennes 1 university with honors.\n\nUntil today, I build two apps in flutter as a freelancer, first one is Taxi app with full functionality and related to Bolt, Uber. Second one is E-commerce app where you can order produts and pay online in the app.\nI am looking forward to your app being next in my portfolio😇.",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -220,7 +220,7 @@ class _MobileHomeState extends State<MobileHome> {
                             letterSpacing: 0.75,
                           ),
                           CustomText(
-                            text: "Here are a few technologies I've been working with recently:\n\n",
+                            text: "\n\nHere are a few technologies I've been working with recently:\n\n",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -299,11 +299,6 @@ class _MobileHomeState extends State<MobileHome> {
                           fit: BoxFit.cover,
                           image: AssetImage("images/pic1.jpg"),
                         ),
-                      ),
-                      Container(
-                        height: size.height * 0.5,
-                        width: size.width * 0.6,
-                        color: Color(0xff61F9D5).withOpacity(0.5),
                       ),
                     ],
                   ),
@@ -457,7 +452,7 @@ class _MobileHomeState extends State<MobileHome> {
                         alignment: WrapAlignment.center,
                         children: [
                           Text(
-                            "I'm currently looking for work opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
+                            "I'm currently looking for work opportunities, my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!\n\nMob:  +994554261998",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Colors.white.withOpacity(0.4),

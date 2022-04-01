@@ -77,20 +77,20 @@ class About extends StatelessWidget {
                   children: [
                     CustomText(
                       text:
-                          "Hello! I'm Elvin Osmanov, Document Controller in AZFEN J.V. construction company\n\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n\n",
+                          "Hello, Thank you discovering me. Let me give you more information about myself.\nI am a young individual currently working at AZFEN J.V as Document controller and also working as a freelance flutter developer.\nI love to create apps which helps people to facilitate the work they are doing. With my strong background from different fields of computer science, i am able to write pixel-perfect, high performance and clean code applications.\n\nI completed my bachelor's degree in Petroleum Engineering with distinction at UFAZ French-Azerbaijani University which is a joint two diploma program between ASOIU, Strasbourg and Rennes 1 universities. I have two diploma one from ASOIU and other from Rennes 1 university with honors.\n\nUntil today, I build two apps in flutter as a freelancer, first one is Taxi app with full functionality and related to Bolt, Uber. Second one is E-commerce app where you can order produts and pay online in the app.\nI am looking forward to your app being next in my portfolio😇.",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       letterSpacing: 0.75,
                     ),
+                    // CustomText(
+                    //   text:
+                    //       "I graduated my Bachlor's degree in Petroleum engineering and  at French-Azerbaijani university which is joint program between Azerbaijan State Oil and Industry University. University of Rennes 1 and University of Strasbourg\nI worked on a Taxi and E-commerce apps as a freelancer.\n\n",
+                    //   textsize: 16.0,
+                    //   color: Color(0xff828DAA),
+                    //   letterSpacing: 0.75,
+                    // ),
                     CustomText(
-                      text:
-                          "I graduated my Bachlor's degree in Petroleum engineering and  at French-Azerbaijani university which is joint program between Azerbaijan State Oil and Industry University. University of Rennes 1 and University of Strasbourg\nI worked on a Taxi and E-commerce apps as a freelancer.\n\n",
-                      textsize: 16.0,
-                      color: Color(0xff828DAA),
-                      letterSpacing: 0.75,
-                    ),
-                    CustomText(
-                      text: "Here are a few technologies I've been working with recently:\n\n",
+                      text: "\n\nHere are a few technologies I've been working with recently:\n\n",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
                       // fontWeight: FontWeight.w500,
@@ -157,7 +157,7 @@ class About extends StatelessWidget {
                       ),
                     ),
                   ),
-                  CustomImageAnimation()
+                  CustomImage()
                 ],
               ),
             ),
@@ -168,68 +168,29 @@ class About extends StatelessWidget {
   }
 }
 
-class CustomImageAnimation extends StatefulWidget {
-  CustomImageAnimation({Key key}) : super(key: key);
+class CustomImage extends StatefulWidget {
+  CustomImage({Key key}) : super(key: key);
 
   @override
-  _CustomImageAnimationState createState() => _CustomImageAnimationState();
+  _CustomImageState createState() => _CustomImageState();
 }
 
-class _CustomImageAnimationState extends State<CustomImageAnimation> {
-  Color customImageColor = Color(0xff61F9D5).withOpacity(0.5);
-  // ignore: unused_field
-  int _enterCounter = 0;
-  // ignore: unused_field
-  int _exitCounter = 0;
-  double x = 0.0;
-  double y = 0.0;
-
-  void _incrementEnter(PointerEvent details) {
-    setState(() {
-      _enterCounter++;
-    });
-  }
-
-  void _incrementExit(PointerEvent details) {
-    setState(() {
-      customImageColor = Color(0xff61F9D5).withOpacity(0.5);
-      _exitCounter++;
-    });
-  }
-
-  void _updateLocation(PointerEvent details) {
-    setState(() {
-      customImageColor = Colors.transparent;
-      x = details.position.dx;
-      y = details.position.dy;
-    });
-  }
-
+class _CustomImageState extends State<CustomImage> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    return MouseRegion(
-      onEnter: _incrementEnter,
-      onHover: _updateLocation,
-      onExit: _incrementExit,
-      child: Stack(
-        children: [
-          Container(
-            height: size.height / 2,
-            width: size.width / 5,
-            color: Colors.black54,
-            child: Image(
-              fit: BoxFit.cover,
-              image: AssetImage("images/pic1.jpg"),
-            ),
+    return Stack(
+      children: [
+        Container(
+          height: size.height / 2,
+          width: size.width / 5,
+          color: Colors.black54,
+          child: Image(
+            fit: BoxFit.cover,
+            image: AssetImage("images/pic1.jpg"),
           ),
-          Container(
-            height: size.height / 2,
-            width: size.width / 5,
-            color: customImageColor,
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
